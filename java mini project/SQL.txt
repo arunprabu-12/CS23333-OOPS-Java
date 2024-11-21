@@ -1,0 +1,13 @@
+CREATE TABLE CallLog (
+    call_id INT PRIMARY KEY AUTO_INCREMENT,
+    caller_number VARCHAR(15),
+    call_duration INT,
+    call_type VARCHAR(10),
+    call_timestamp DATETIME
+);
+
+CREATE TABLE Contact (
+    contact_id INT PRIMARY KEY AUTO_INCREMENT,
+    contact_name VARCHAR(50),
+    phone_number VARCHAR(15)
+);
